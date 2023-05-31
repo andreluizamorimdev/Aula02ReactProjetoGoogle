@@ -1,0 +1,26 @@
+.Header {
+    background-color: #fff;
+    color: #222;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.Menu {
+   display: flex;
+   margin: 0;
+   flex-direction: row;
+   width: 300px;
+   justify-content: space-between;
+}
+
+.Menu li {
+    list-style-type: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #222;
+}
