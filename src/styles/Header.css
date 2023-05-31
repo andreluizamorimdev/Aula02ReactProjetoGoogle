@@ -10,8 +10,13 @@
    display: flex;
    margin: 0;
    flex-direction: row;
-   width: 300px;
+   width: 200px;
    justify-content: space-between;
+}
+
+.Menu-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .Menu li {

@@ -9,16 +9,16 @@ function Header() {
     <div className="Header">
       <ul className="Menu">
         <li>
-            <a className="menu-icon" href="https://mail.google.com">Gmail</a>
+            <a href="https://mail.google.com">Gmail</a>
         </li>
         <li>
-            <a className="menu-icon" href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Imagens</a>
+            <a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl">Imagens</a>
         </li>
         <li>
-            <img src={apps} alt="menu" />
+            <img className="Menu-icon" src={apps} alt="menu" />
         </li>
         <li>
-            <img src={signInLogo} alt="profile" />
+            <img className="Menu-icon" src={signInLogo} alt="profile" />
         </li>
       </ul>
 
