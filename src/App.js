@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <Header/>
       <img className="app-logo" src={googleLogo} alt="" />
-      <Input />
-      <Button />
+      <Input type="search" />
+      <Button value='Pesquisa Google' prop2={25} prop3={true} />
+      <Button value='Estou com Sorte' prop2={30} prop3={false} />
     </div>
   );
 }

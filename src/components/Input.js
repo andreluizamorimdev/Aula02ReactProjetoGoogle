@@ -1,11 +1,23 @@
+import "../styles/Input.css";
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Input () {
+function Input (props) {
     return ( 
-    <div className='Input'>
-    <input type="text" placeholder="Pesquise no Google ou escreva um url" />
-    </div>
-     );
+        <div>
+            <input className='Input' type={props.type} placeholder={props.placeholder} />
+        </div>
+    );
+}
+
+Input.propTypes = {
+    type: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+
+}
+
+Input.defaultProps = {
+    placeholder: 'Pesquise no Google ou escreva um url'
 }
 
 export default Input;

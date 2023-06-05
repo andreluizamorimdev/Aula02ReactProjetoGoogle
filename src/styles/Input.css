@@ -1,8 +1,15 @@
-Input {
-    margin: 70px;
-    border: 1px solid black;
-    margin-bottom: auto;
-    padding: 5px;
+.Input {
+    margin: 30px;
+    border: 1px solid #dfe1e5; 
+    box-shadow: none; 
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    padding: 12px;
+    width: 30rem;
     outline: none;
     background-color: white;
+}
+
+.Input::placeholder {
+    text-align: center;
 }

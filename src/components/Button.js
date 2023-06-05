@@ -1,16 +1,20 @@
 import "../styles/Button.css";
 
-
 import React from "react";
-let name1 = "Pesquisa Google";
-let name2 = "Estou com Sorte";
-function Button() {
+import PropTypes from "prop-types";
+
+function Button(props) {
     return (
-      <div>
-        <button className="Btn">{name1}</button>
-        <button className="Btn">{name2}</button>
-      </div>
+      <React.Fragment>
+        <button className="Btn">{props.value}</button>
+      </React.Fragment>
     );
   }
+
+  Button.propTypes = {
+      value: PropTypes.string.isRequired,
+      prop2: PropTypes.number.isRequired,
+      prop3: PropTypes.bool
+  };
   
   export default Button;
